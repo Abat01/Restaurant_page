@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant page</title>
+    <style>
+        /* MAIN BACKGROUND */
+
+        body {
+            background-image: url(/Users/abatannamammedova/Desktop/html_new/topography.svg), linear-gradient(110deg, #f93d66, #6d47d9);
+
+        }
+        /* MENU */
+        *{
+            padding: 10px 20px;
+            margin: 0;
+            box-sizing: border-box;
+    
+        }
+        .menu{
+            background-color:#ffc600;
+            padding: 10px 20px;
+        }
+        nav{
+            display: inherit;
+            width: calc(100% - 103px);
+            text-align: center;
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline;
+            margin: inherit;
+        }
+        .menu{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: left;
+            background: #ffc600;
+        }
+        /* Top Box class */
+
+        .hero{
+            background:  url(taco.jpeg);
+            min-height: 700px;
+            background-size: cover;
+            background-position: bottom right;
+            justify-content: center;
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: starts;
+            grid-area: hero;
+            font-size: 19px;
+            
+        }
+        /*Wrapper edit*/
+        div{display: blocky;
+        }
+        body{
+            font-size: 15px;
+        }
+
+
+
+        /* FEATURES MINIMIZE */
+        .features{
+            display: grid;
+            grid-gap: 20px;
+            row-gap: 20px;
+            column-gap: 20px;
+            box-sizing: inherit;
+            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+           
+            background: white;
+            background-repeat-x: initial;
+             background-repeat-y: initial;
+             background-image: initial;
+             background-position-x: initial;
+             background-position-y: initial;
+             background-size: initial;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            
+            padding: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            border: 1px solid white;
+            border-top-width: 1px;
+            border-right-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-right-style: solid;
+            border-bottom-style:solid;
+            border-left-style: solid;
+            border-top-color: white;
+            border-right-color: white;
+            border-bottom-color: white;
+            border-left-color: white;
+            border-image-source: initial;
+            border-image-slice: initial;
+            border-image-width: initial;
+            border-image-outset: initial;
+            border-image-repeat: initial;
+            
+
+            text-align:center;
+            box-shadow: 0 0 4px rgb(0 0 0 / 10%);
+            box-sizing: inherit;
+        }
+        div{
+            display: block;
+        }
+            body {
+                font-size: 15px;
+            }
+
+            /*INFORMATION BOX TACO*/
+           img{
+                max-width: 100%;
+                box-sizing: inherit;
+
+            }
+            img{overflow-clip-margin: content-box;
+            overflow: clip; }
+
+    </style>
+</head>
+<body>
+    <header>
+      <a href="#" class="menu">MENU</a>
+      <nav>
+        <ul>
+          <li><a href="#">TACOS</a></li>
+          <li><a href="#">BEERS</a></li>
+          <li><a href="#">WINES</a></li>
+          <li><a href="#">DESSERTS</a></li>
+          <li><a href="#">RESERVATIONS</a></li>
+        </ul>
+      </nav>
+    </header>
+        <div class="top">
+            <header class="hero">
+                <h1>Terry's Taco Joint</h1>
+                <p>Pretty Good Tacos!</p>
+            </header>
+        <div class="box box1">
+        <p class="price">$1.99</p>
+        <p>Tacos</p>
+        </div>
+        <div class="box box2">
+            <p class="price">$3.99</p>
+            <p>Kombucha</p>
+        </div>
+        <section class="features">
+            <div class="feature">
+              <span class="icon">🌮</span>
+              <h3>Tacos</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+            <div class="feature">
+              <span class="icon">🍺</span>
+              <h3>Beer</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+            <div class="feature">
+              <span class="icon">🍷</span>
+              <h3>Wine</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+            <div class="feature">
+              <span class="icon">🎵</span>
+              <h3>Music</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+          </section>
+        <section class="information">
+            <img src="/Users/abatannamammedova/Desktop/html_new/queso-taco.png" alt="Delicouse Taco" class="information">
+        </section>
+    <div class="details">
+        <h2>Featured Taco</h2>
+        <p>Slim Profile, easy to hold and loaded with chesse.</p>
+        <p>This is the one you have been waiting for...</p>
+        <button>Learn more...</button>
+    </div>
+</section>
+ <section class="random_pic">
+<h2>Instant Grams</h2>
+<img src="/Users/abatannamammedova/Desktop/html_new/RP.jpeg" alt="">
+<img src="/Users/abatannamammedova/Desktop/html_new/RP2.jpeg"alt="">
+<img src="/Users/abatannamammedova/Desktop/html_new/RP3.jpeg" alt="">
+<img src="/Users/abatannamammedova/Desktop/html_new/RP4.jpeg"alt="">
+<img src="/Users/abatannamammedova/Desktop/html_new/RP5.jpeg"alt="">
+<img src="/Users/abatannamammedova/Desktop/html_new/RP6.jpeg"alt="">
+<img src="/Users/abatannamammedova/Desktop/html_new/RP7.jpeg"alt="">
+<img src="/Users/abatannamammedova/Desktop/html_new/RP8.jpeg"alt="">
+<img src="/Users/abatannamammedova/Desktop/html_new/RP9.jpeg"alt="">
+<img src="/Users/abatannamammedova/Desktop/html_new/RP10.jpeg" alt="">
+
+</section>
+</div>
+    </main>
+</body>
+</html>
