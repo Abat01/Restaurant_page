@@ -1,115 +1,56 @@
-/* MENU */
-*{
-    padding: 10px 20px;
-    margin: 0;
-    box-sizing: border-box;
-
-}
-.menu{
-    background-color:#ffc600;
-    padding: 10px 20px;
-}
-nav{
-    display: inherit;
-    width: calc(100% - 103px);
-    text-align: center;
-}
-nav ul{
-    list-style-type: none;
-}
-nav ul li{
-    display: inline;
-    margin: inherit;
-}
-.menu{
-    color: black;
+/* ALL */
+  
+  .all {
+    display: grid;
+    grid-gap: 20px;
+    
+  }
+  body {
+    font-size: 21px;
+    background-image: linear-gradient(110deg, #f93d66,#6d47d9 );
+    min-height: calc(100vh - 100px);
+    margin: 50px;
+    background-attachment: fixed;
+    letter-spacing: -1px;
+    background-image: url('../images/topography.svg'), linear-gradient(110deg, #f93d66, #6d47d9);
+    
+    }
+   /* menu */
+   .menu{
+    color: #272722;
     text-decoration: none;
     font-weight: bold;
     font-size: 10px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    padding: 10px 20px;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: left;
-    background: #ffc600;
-}
-.top{
+    background-color: #ffc600;
+    padding: 10px;
+    display:inline-block;
+    width: 20px;
+    justify-content: center;
+  }
+  .menu_items{
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu_items div{
+    background-color: var(--yellow);
+    height: 50px;
+    width: 120px;
+    font-size: 15px;
+    display: flex;
+    margin-top: 10px;
+    pad: 50px;
+    justify-content: center;
+    align-items: center;
+    
 
-display: grid;
-grid-gap: 25px;
-grid-template-areas: "hero hero box1"
-"hero hero box2";
-
-}
-.price{
-
-font-size: 60px;
-font-weight: 300;
-box-sizing: inherit;
-}
-.box1 {
-grid-area: box1;
-
-}
-.box1{
-
-background: var(--yellow);
-display: grid;
-align-items: center;
-justify-items: center;
-align-content: center;
-}
-:root {
---yellow: #ffc600;
---black: #272722;
-}
-html {
-box-sizing: border-box;
-font-weight: 900;
-font-size: 10px;
-color: var(--black);
-text-shadow: 0 2px 0 rgba(0, 0, 0, 0,0.7);
-}
-.box2 {
-grid-area: box2;
-}
-.box2{
-
-background: var(--yellow);
-display: grid;
-align-items: center;
-justify-items: center;
-align-content: center;
-}
-
-:root {
---yellow: #ffc600;
---black: #272722;
-}
-html {
-box-sizing: border-box;
-font-weight: 900;
-font-size: 10px;
-color: var(--black);
-text-shadow: 0 2px 0 rgba(0, 0, 0, 0,0.7);
-}
-
-body {
-font-size: 21px;
-background-image: linear-gradient(110deg, #f93d66,#6d47d9 );
-min-height: calc(100vh - 100px);
-margin: 50px;
-background-attachment: fixed;
-letter-spacing: -1px;
-background-image: url(/Users/abatannamammedova/Desktop/html_new/topography.svg), linear-gradient(110deg, #f93d66, #6d47d9);
-
-}
-/* Top Box class */
+  }
+  @media only screen and (max-width: 900px) {
+     .menu_items {
+      display: none;
+      
+    }
+  }
+  /* Top Box class */
 
 .top {
     display: grid;
@@ -134,44 +75,51 @@ background-image: url(/Users/abatannamammedova/Desktop/html_new/topography.svg),
     background: var(--yellow);
     padding: 5px;
   }
-.t_box{
-    background: var(--yellow) ;  
-      display: grid;
+.t_box1{
+    background-color: var(--yellow) ;  
+    display: grid;
     align-items: center;
     justify-items: center;
     align-content: center;  
   }
 .t_box2{
-    background: var(--yellow) ;  
+    background-color: var(--yellow) ;  
       display: grid;
     align-items: center;
     justify-items: center;
     align-content: center;
- 
-  } 
+} 
+:root {
+        --yellow: #ffc600;
+        --black: #272722;
+        }
+        html {
+        box-sizing: border-box;
+        font-weight: 900;
+        font-size: 10px;
+        color: var(--black);
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0,0.7);
+        }
+
 .price {
     font-size: 60px;
     font-weight: 300;
 }
-
-/*Wrapper edit*/
-div{display: blocky;
-}
-body{
-    font-size: 15px;
-}
-/* FEATURES MINIMIZE */
-.features{
+  
+  /* MENU ITEMS */
+  
+  .menu{
+    
+  }
+  
+  /* Features! */
+  .features{
     display: grid;
     grid-gap: 20px;
     row-gap: 20px;
     column-gap: 20px;
     box-sizing: inherit;
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-}
-
-    body {
-font-size: 15px;
 }
 html {
 box-sizing: border-box;
@@ -198,59 +146,49 @@ div{
 body {
         font-size: 15px;
     }
-
-/*INFORMATION BOX TACO*/
-   img{
-        max-width: 100%;
-        box-sizing: inherit;
-
-    }
-    img{overflow-clip-margin: content-box;
-    overflow: clip; 
-}
-
 .information{
+      background: white;
+      padding: 50px;
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      align-items: center;
+    }
+    button {
+      background: #ffc600;
+      border: 0;
+      padding: 10px 20px;
+  }
 
-box-sizing: inherit;
-background: white;
-padding: 50px;
-display: grid;
-grid-template-columns: 400px 1fr;
-align-items: center;
-} 
-body {
-font-size: 15px;
-}
-button {
-background: #ffc600;
-border: 0;
-padding: 10px 20px;
-}
-/* INFO GALLERY EDITING*/
-.info_gallery {
-display: grid;
-grid-gap: 20px;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ /* INFO GALLERY EDITING*/
+ .random_images {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
+  }
+  .random_images img {
+  box-sizing: 15px
+  ;
+  }
+  .random_images h2 {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  }
+  .random_images h2:before, .random_images h2:after {
+  display: block;
+  content: '';
+  height: 10px;
+  background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
+  }
+  
+  .random_images h2:after {
+  --direction: right;
+  }
 
-}
-.info_gallery img {
-box-sizing: 15px
-;
-}
-.info_gallery h2 {
-grid-column: 1 / -1;
-display: grid;
-grid-template-columns: 1fr auto 1fr;
-grid-gap: 20px;
-align-items: center;
-}
-.info_gallery h2:before, .info_gallery h2:after {
-display: block;
-content: '';
-height: 10px;
-background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
-}
 
-.info_gallery h2:after {
---direction: right;
-}
+
+
+  
